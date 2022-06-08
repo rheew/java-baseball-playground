@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class NumberUtilTest {
+class NumberUtilsTest {
 
     @DisplayName("숫자 세개를 넘겨 받고 각 자리수를 가져온다.")
     @Test
@@ -13,9 +13,9 @@ class NumberUtilTest {
 
         int num = 123;
 
-        assertThat(NumberUtil.firstNum(num)).isEqualTo(1);
-        assertThat(NumberUtil.secondNum(num)).isEqualTo(2);
-        assertThat(NumberUtil.thirdNum(num)).isEqualTo(3);
+        assertThat(NumberUtils.firstNum(num)).isEqualTo(1);
+        assertThat(NumberUtils.secondNum(num)).isEqualTo(2);
+        assertThat(NumberUtils.thirdNum(num)).isEqualTo(3);
     }
 
 }

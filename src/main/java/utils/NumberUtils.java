@@ -3,7 +3,7 @@ package utils;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
-public class NumberUtil {
+public class NumberUtils {
 
     final int firstNumInd = 0;
     final int secondNumInd = 1;
