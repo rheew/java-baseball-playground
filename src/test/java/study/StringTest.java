@@ -43,4 +43,11 @@ public class StringTest {
                     "abc".charAt(4);
                 }).withMessageMatching("String index out of range: 4");
     }
+
+    @Test
+    void charToInt() {
+        char a = '1';
+
+        assertThat(Character.getNumericValue(a)).isEqualTo(1);
+    }
 }
