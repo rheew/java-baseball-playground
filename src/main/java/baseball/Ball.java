@@ -25,7 +25,16 @@ public class Ball {
         return Objects.hash(number, position);
     }
 
+
+    public boolean isBall(Ball ball) {
+        return isEqualNumber(ball) && !isEqualPosition(ball);
+    }
+
     public boolean isEqualPosition(Ball ball) {
-        return this.position == ball.position;
+        return position == ball.position;
+    }
+
+    public boolean isEqualNumber(Ball ball) {
+        return number.equals(ball.number);
     }
 }

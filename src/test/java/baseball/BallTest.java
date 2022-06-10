@@ -33,4 +33,11 @@ public class BallTest {
         assertThat(ball1.isEqualPosition(ball3)).isEqualTo(false);
         assertThat(ball1.isEqualPosition(ball4)).isEqualTo(true);
     }
+
+    @Test
+    void 같은숫자인지_비교() {
+        assertThat(ball1.isEqualNumber(ball2)).isEqualTo(true);
+        assertThat(ball1.isEqualNumber(ball3)).isEqualTo(true);
+        assertThat(ball1.isEqualNumber(ball4)).isEqualTo(false);
+    }
 }
