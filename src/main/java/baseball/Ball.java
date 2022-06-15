@@ -37,4 +37,14 @@ public class Ball {
     public boolean isEqualNumber(Ball ball) {
         return number.equals(ball.number);
     }
+
+    public BaseballState play(Ball ball) {
+        if (this.equals(ball)) {
+            return BaseballState.STRIKE;
+        }
+        if (this.isBall(ball)) {
+            return BaseballState.BALL;
+        }
+        return BaseballState.NOTHING;
+    }
 }

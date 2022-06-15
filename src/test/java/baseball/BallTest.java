@@ -21,6 +21,20 @@ public class BallTest {
     }
 
     @Test
+    void 스트라이크() {
+        assertThat(ball1.play(ball2)).isEqualTo(BaseballState.STRIKE);
+    }
+
+    @Test
+    void 볼() {
+        assertThat(ball1.play(ball3)).isEqualTo(BaseballState.BALL);
+    }
+    @Test
+    void 낫딩() {
+        assertThat(ball1.play(ball4)).isEqualTo(BaseballState.NOTHING);
+    }
+
+    @Test
     void 같은공인지_비교() {
         assertThat(ball1.equals(ball2)).isEqualTo(true);
         assertThat(ball1.equals(ball3)).isEqualTo(false);
