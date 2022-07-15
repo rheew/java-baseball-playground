@@ -24,3 +24,12 @@ git checkout main // 기본 브랜치가 main인 경우
 git checkout -b 브랜치이름
 ex) git checkout -b apply-feedback
 ```
+
+## 숫자 야구 게임 기능 정리
+
+---
+
+1. 랜덤 숫자 3자리 배정
+2. 유저의 정답 여부 확인 (볼인지 스트라이크인지)
+3. 결과 출력
+4. 세자리 수 중 원하는 숫자 자리수를 알려주는 기능
